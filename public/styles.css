@@ -1,0 +1,279 @@
+/* 
+Thomas Gibson 9/15/2024
+
+The style sheet for all pages
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+  background-color: #232D3F;
+
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 18px;
+}
+
+h1 a {
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: bold;
+  font-style: italic;
+  font-size: 24px;
+}
+
+/* navigation */
+#top-nav {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+#top-nav img {
+  width: 24px;
+  padding-right: 20px;
+  padding-left: 10px;
+}
+
+#top-nav form {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#search-bar,
+button {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#product-nav {
+  padding: 10px;
+  background-color: rgb(194, 216, 243);
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
+  background-color: #839ac5;
+}
+
+#product-nav img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  border-radius: 20px;
+}
+
+#product-nav p {
+  font-weight: bold;
+  text-align: center;
+  font-size: 16px;
+  margin: 10px;
+}
+
+/* Splash Section */
+
+#splash {
+  background-color: rgb(194, 216, 243);
+  display: flex;
+}
+
+#splash article {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+#splash img {
+  width: 200px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.category-button{
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 0;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+/* Product List */
+
+#product-list li {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(209, 209, 209);
+  margin: 10px;
+}
+
+#product-list li p {
+  margin: 20px;
+}
+
+#product-list ul {
+  margin: 20px;
+  text-wrap: nowrap;
+}
+
+#product-list img {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+/* Detail page */
+
+#detail-main {
+  background-color: rgba(130, 130, 130, 0.6);
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 20px;
+}
+
+#detail-container {
+  display: flex;
+  list-style-type: none;
+}
+.detail-item{
+  margin-top: 10px;
+}
+.detail-item ul {
+  margin-left: 30px;
+  list-style-type: none;
+}
+
+.detail-item img {
+  width: 250px;
+  border-radius: 20px;
+}
+
+.cart-item {
+  display: flex;
+  margin: 20px;
+  background-color: rgba(130, 130, 130, 0.6);
+  padding: 20px;
+}
+
+.cart-item ul {
+  list-style-type: none;
+  margin-left: 20px;
+}
+
+.cart-item img {
+  width: 200px;
+  border-radius: 20px;
+}
+
+.remove-btn {
+  background-color: rgb(178, 34, 34, 60%);
+  color: white;
+}
+
+#cart-info {
+  background-color: rgba(130, 130, 130, 0.6);
+  margin: 20px;
+  padding: 20px;
+}
+
+/* * {
+  margin: 0px;
+  padding: 0px;
+}
+
+#title {
+  
+  padding-left: 10%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+body{
+  height: 2000px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.item {
+  flex: 0 0 200px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+}
+
+.item .text {
+  padding: 0 20px 20px;
+}
+
+#form-popup {
+  display: none;
+  border: 3px solid blue;
+}
+
+#form-container {
+  max-width: 300px;
+  margin: auto;
+  padding: 10px;
+}
+
+.card-holder {
+  width: 400px;
+  height: 300px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  text-align: center;
+}
+
+.card-holder h3 {
+  margin-top: 20px;
+  font-size: 24px;
+}
+
+li
+{
+  
+} */

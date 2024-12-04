@@ -1,0 +1,25 @@
+extends layout 
+
+block append nav
+
+block layout-content
+    span#splash
+        img(src="images/Desk Fan.webp" alt="fan image")
+        article
+            div 
+                h2 Need a fan?
+                p Only Fans is the #1 e-shop for just that.
+                p Ceiling fans, desk fans, box fans; you name it, we've got it.
+                br
+            div 
+                p Make your shopping a breeze, sign up today! 
+                button 
+                    a#sign-up(href="#") Signup
+    nav 
+        h2.centered Categories
+        br
+        ul#product-nav 
+            each category in categoryList
+                li
+                    a(href="onlyfans/category/" + category.id) 
+                        button.category-button #{category.name}

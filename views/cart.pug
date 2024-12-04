@@ -1,0 +1,27 @@
+extends layout 
+
+block append nav 
+
+block layout-content 
+    div#cart-container
+        div.cart-item
+            img(src="images/travel fan.jpg" alt="travel fan")
+            ul 
+                li 
+                    p Unit Price: 9.99
+                    br
+                    p Quantity 
+                    input(type="number" value="1" min="0")
+                    button Change 
+                    br
+                    p Total Price: $9.99
+                    button.remove-btn Remove From Cart 
+    section#cart-info 
+        h2 Info 
+        p SubTotal: 199.97
+        p Tax: 12.49
+        p Deliver: $0.00
+        p Total: 213.46
+        br
+        button 
+            b Proceed to Checkout

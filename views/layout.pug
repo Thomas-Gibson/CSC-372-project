@@ -1,0 +1,26 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+    title #{title}
+    link(rel="stylesheet" href="/styles.css" type="text/css")
+    block scripts
+      
+  body
+    block nav
+      header
+        nav#top-nav 
+          h1 
+            a(href = "/onlyfans") Only Fans
+   
+          form(action="")
+            input#search-bar(type="text" placeholder="box fan, ceiling fan, ...")
+            button(type="submit") Search
+          a(href="#")
+            img(src="/images/cart.svg", alt="cart")
+          
+          a(href="#")
+            img(src="/images/person-circle.svg", alt="account")
+    main
+      block layout-content
