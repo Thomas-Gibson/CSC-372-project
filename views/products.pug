@@ -9,8 +9,8 @@ block layout-content
                 img(src="" + product.image_url alt=product.name + " image")
                 ul 
                     li 
-                        p.name #{product.name}
-                    li Price: #{product.price}
+                        h3.name #{product.name}
+                    li Price: $#{product.price}
                     li
                         button  
                             a(href="/onlyfans/details/" + product.id) View Product

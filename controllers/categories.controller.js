@@ -7,7 +7,7 @@ function getAllCategories(req, res, next) {
         res.render("home", { categoryList: categoryList })
     } catch (err) {
         console.error("Error while getting all products ", err.message);
-        next(err); // next is not a function error?
+        next(err);
     }
 }
 

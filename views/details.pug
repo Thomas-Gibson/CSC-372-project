@@ -13,8 +13,7 @@ block layout-content
                     li 
                         p Price: $#{product.price}
                     li 
-                        p Shipping: $2.99
-                    li 
                         h1 Description: 
                         p #{product.description}
-        button Add to Cart
+        a(href="/onlyfans/cart/add/2/"+product.id) 
+            button Add to Cart

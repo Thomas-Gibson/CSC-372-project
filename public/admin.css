@@ -1,0 +1,104 @@
+/* 
+Thomas Gibson
+10/16/2024
+
+The style sheet for all admin pages.
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    background-color: rgb(160, 100, 100);
+}
+
+
+
+nav a {
+    padding: 15px;
+    margin: 10px;
+
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: black solid 1px;
+    border-radius: 20px;
+}
+
+nav a:hover {
+    background-color: rgb(110, 45, 45);
+}
+
+form {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+form label {
+    font-family: sans-serif;
+}
+
+#upload-form input {
+    margin: 20px 0px 20px 0px;
+    display: block;
+}
+
+#upload {
+    width: 300px;
+}
+
+.submit {
+    padding: 10px;
+    border-radius: 20px;
+    width: 100px;
+    font-weight: bold;
+}
+
+.submit:hover {
+    background-color: rgba(110, 0, 0, 0.25);
+}
+
+#search {
+    padding: 10px;
+    border-radius: 20px;
+
+}
+
+#product-container {
+    background-color: rgba(0, 0, 0, 0.25);
+}
+
+#product-container button {
+    min-width: 100px;
+    padding: 2px;
+    margin: 10px;
+    justify-content: center;
+}
+
+.product-item {
+    display: flex;
+}
+
+.product-item p {
+    margin: 10px;
+}
+
+button {
+    padding: 10px;
+    border-radius: 20px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: rgba(110, 0, 0, 0.25);
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}

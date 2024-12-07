@@ -1,0 +1,12 @@
+extends admin-layout 
+
+block append nav
+
+block layout-content 
+
+    form#upload-form(action="/upload" enctype="multipart/form-data" method="post")
+        label(for="upload") Upload a file containing JSON formatted information.
+        p Example: file_name (.csv, .json, .txt)
+        input#upload(type="file" name="file" accept=".csv,.json,.txt" required)
+        br
+        input.submit(type="submit" value="Upload")

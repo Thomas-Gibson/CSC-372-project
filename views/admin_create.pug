@@ -1,0 +1,35 @@
+extends admin-layout 
+
+block append nav
+
+block layout-content 
+    form(action="/onlyfans/admin/create_product" method="POST" enctype="multipart/form-data")
+        p Adding product
+
+        label(for="productName") Name
+        br
+        input#productName(type="text" name="name" value="")
+        br
+
+        label(for="productDescription") Description
+        br
+        textarea#productDescription(name="description" )
+        br
+
+        label(for="categoryName") Category ID
+        br
+        input#categoryName(type="text" name="category" value="")
+        br
+
+        label(for="imagePath") Image Path
+        br
+        input#imagePath(type="url" name="image" value="")
+        br
+
+        label(for="productPrice") Price
+        br
+        input#productPrice(type="number" name="price" min="0.0" value="")
+        br
+        br
+
+        input.submit(type="submit" value="Save")

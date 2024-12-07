@@ -16,10 +16,10 @@ block layout-content
                 button 
                     a#sign-up(href="#") Signup
     nav 
-        h2.centered Categories
-        br
+        
         ul#product-nav 
             each category in categoryList
                 li
                     a(href="onlyfans/category/" + category.id) 
-                        button.category-button #{category.name}
+                        img(src=""+category.thumbnail, alt="")
+                        h2 #{category.name}

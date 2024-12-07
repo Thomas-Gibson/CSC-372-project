@@ -25,13 +25,17 @@ p {
   font-size: 18px;
 }
 
-h1 a {
+h1 a, h2{
   color: white;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-weight: bold;
   font-style: italic;
   font-size: 24px;
 }
+a h2 {
+  text-align: center;
+}
+
 
 /* navigation */
 #top-nav {
@@ -97,6 +101,8 @@ button {
 #splash img {
   width: 200px;
 }
+
+
 
 .centered {
   text-align: center;

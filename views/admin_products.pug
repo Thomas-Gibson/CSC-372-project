@@ -1,0 +1,34 @@
+extends admin-layout 
+
+block append nav
+
+block layout-content 
+    form(action="")
+        label(for="search") Search 
+        input#search(type="search")
+        
+        label(for="category") Category 
+        input#category(type="radio" name="filter")
+
+        lable(for="category") Product 
+        input#product(type="radio" name="filter")
+
+        input.submit(type="submit")
+    
+    section#product-container
+        
+        each product in productList
+            div.product-item
+                img(src=""+product.image_url alt=""+product.name)
+                div
+                    p id: #{product.id}
+                    p name: #{product.name}
+                    p #{product.description}
+                    p Category name: #{product.category_id}
+                    p image path: #{product.image_url}
+                    p price: $#{product.price}
+            
+            a(href="/onlyfans/admin/edit/" + product.id)
+                button Edit
+            a(href="/onlyfans/admin/delete/" + product.id) 
+                button Delete

@@ -1,0 +1,36 @@
+extends admin-layout 
+
+block append nav
+
+block layout-content 
+    form(action="/onlyfans/admin/update_product/" + product.id method="POST" enctype="multipart/form-data")
+        p Editing: Product #{product.id}
+
+        label(for="productName") Name
+        br
+        input#productName(type="text" name="name" value=""+product.name)
+        br
+
+        label(for="productDescription") Description
+        br
+        textarea#productDescription(name="description" )
+            | #{product.description}
+        br
+
+        label(for="categoryName") Category ID
+        br
+        input#categoryName(type="text" name="category" value=""+product.category_id)
+        br
+
+        label(for="imagePath") Image Path
+        br
+        input#imagePath(type="url" name="image" value=""+product.image_url)
+        br
+
+        label(for="productPrice") Price
+        br
+        input#productPrice(type="number" name="price" min="0.0" value=""+product.price)
+        br
+        br
+
+        input.submit(type="submit" value="Save")

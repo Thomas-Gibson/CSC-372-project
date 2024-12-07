@@ -19,7 +19,10 @@ app.set('views', __dirname +'/views');
 app.use("/onlyfans", appRoutes)
 
 app.get("/", (req, res) => {
-  res.redirect("/onlyfans/init")
+  //res.redirect("/onlyfans/init")
+  //res.render("admin-upload", {});
+
+  res.redirect("/onlyfans");
 })
 
 const PORT = process.env.PORT || 3000;
