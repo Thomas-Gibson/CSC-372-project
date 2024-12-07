@@ -13,7 +13,7 @@ An e-commerce site that sells fans.
 - Create new products.
 
 ## How to use
-before using make sure NODE.js is installed. \
+before using make sure NODE.js is installed.
 
 1. clone the repository: https://github.com/Thomas-Gibson/CSC-372-project.git \
    or download the zip
